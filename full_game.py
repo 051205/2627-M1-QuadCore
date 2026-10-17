@@ -15,8 +15,8 @@ START_X = -320
 FINISH_X = 300
 
 # TODO 1: asigna dos velocidades positivas. Predice quién ganará.
-RED_SPEED = 0
-BLUE_SPEED = 0
+RED_SPEED = 5
+BLUE_SPEED = 3
 
 
 def prepare_game():
