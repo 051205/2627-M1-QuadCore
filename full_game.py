@@ -47,6 +47,10 @@ def prepare_game():
 
 def run_race(red, blue):
     """Mueve las tortugas hasta que una alcance la meta."""
+    
+    if RED_SPEED <=0 or BLUE_SPEED <=0:
+        print("Error: las velocidades deben ser positivas.")
+        return ""
     # TODO 2: valida con un condicional que ambas velocidades sean positivas.
     # Si alguna no lo es, muestra un mensaje y devuelve una cadena vacía.
 
