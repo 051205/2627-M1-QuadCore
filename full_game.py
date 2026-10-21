@@ -29,7 +29,7 @@ Vemos en el TODO 1 que las velocidades son positivas.
         BLUE_SPEED = 8   ---> gana el azul ----> COMPROBACIÓN 3: de esta forma la tortuga azul es más rápida 
 
         RED_SPEED = 5
-        BLUE_SPEED = 3   ---> empate 
+        BLUE_SPEED = 5   ---> empate -----> COMPROBACION 4: de esta forma tienen la misma velocidad y quedarían empate 
 """
 
 
