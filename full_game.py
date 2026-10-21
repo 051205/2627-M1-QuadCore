@@ -23,10 +23,10 @@ BLUE_SPEED = 3
 Vemos en el TODO 1 que las velocidades son positivas. 
     Posivilidades:
         RED_SPEED = 5
-        BLUE_SPEED = 3   --> gana el rojo 
+        BLUE_SPEED = 3   --> gana el rojo   ----> COMPROBACIÓN 2: de esta forma la roja es más rápida que la azul 
 
         RED_SPEED = 5
-        BLUE_SPEED = 8   ---> gana el azul
+        BLUE_SPEED = 8   ---> gana el azul ----> COMPROBACIÓN 3: de esta forma la tortuga azul es más rápida 
 
         RED_SPEED = 5
         BLUE_SPEED = 3   ---> empate 
