@@ -45,17 +45,33 @@ def prepare_game():
     return screen, red, blue
 
 
+
 def run_race(red, blue):
     """Mueve las tortugas hasta que una alcance la meta."""
     
     if RED_SPEED <=0 or BLUE_SPEED <=0:
         print("Error: las velocidades deben ser positivas.")
         return ""
+    # TODO 2: valida con un condicional que ambas velocidades sean positivas.
+    # Si alguna no lo es, muestra un mensaje y devuelve una cadena vacía.
 
-    # TODO 3: crea un bucle que mueva las dos tortugas en cada vuelta.
-    # Cuando una alcance FINISH_X, devuelve "roja" o "azul".
-    # Si las dos alcanzan FINISH_X en la misma vuelta, devuelve "empate".
-    raise NotImplementedError
+    # TODO 3: bucle de la carrera
+    while True:
+        # Mueve ambas tortugas en el turno actual según sus velocidades
+        red.forward(RED_SPEED)
+        blue.forward(BLUE_SPEED)
+        
+        # Comprueba la posición xcor() de cada tortuga respecto a FINISH_X
+        red_finished = red.xcor() >= FINISH_X
+        blue_finished = blue.xcor() >= FINISH_X
+        
+        # Evalúa las condiciones de llegada a meta
+        if red_finished and blue_finished:
+            return "empate"
+        elif red_finished:
+            return "roja"
+        elif blue_finished:
+            return "azul"
 
 
 def main():
