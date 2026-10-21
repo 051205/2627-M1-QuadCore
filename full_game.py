@@ -98,11 +98,14 @@ def main():
     screen, red, blue = prepare_game()
     winner = run_race(red, blue)
     if winner == "empate":
-       message = ("¡Empate! Las dos tortugas llegan a la vez")
+       message = "¡Empate! Las dos tortugas llegan a la vez"
     elif winner:
-        message = (f"¡Ha ganado la tortuga {winner}!")
+        message = f"¡Ha ganado la tortuga {winner}!"
+    else:
+        message = "Error: las velocidades deben ser positivas."
 
 ### COMPRABACIÓN/ PRUEBA: con esta parte de código el mensaje del ganador sale reflejado en la pantalla. 
+    screen.title(message)
     texto = turtle.Turtle()
     texto.hideturtle()
     texto.penup()
