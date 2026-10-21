@@ -19,6 +19,20 @@ RED_SPEED = 5
 BLUE_SPEED = 3
 
 
+""" COMPROBACION 1:
+Vemos en el TODO 1 que las velocidades son positivas. 
+    Posivilidades:
+        RED_SPEED = 5
+        BLUE_SPEED = 3   --> gana el rojo 
+
+        RED_SPEED = 5
+        BLUE_SPEED = 8   ---> gana el azul
+
+        RED_SPEED = 5
+        BLUE_SPEED = 3   ---> empate 
+"""
+
+
 def prepare_game():
     """Prepara la ventana, la pista y las dos tortugas (código proporcionado)."""
     screen = turtle.Screen()
@@ -49,11 +63,12 @@ def prepare_game():
 def run_race(red, blue):
     """Mueve las tortugas hasta que una alcance la meta."""
     
+    # TODO 2:
     if RED_SPEED <=0 or BLUE_SPEED <=0:
         print("Error: las velocidades deben ser positivas.")
         return ""
-    # TODO 2: valida con un condicional que ambas velocidades sean positivas.
-    # Si alguna no lo es, muestra un mensaje y devuelve una cadena vacía.
+    ### COMPROBACION 1: en TODO 2 comprueba y lanza un error si las velocidades son negativas. 
+  
 
     # TODO 3: bucle de la carrera
     while True:
