@@ -80,3 +80,6 @@ Logra que `full_game.py` cuente con todas las partes necesarias para ejecutar la
 ### Consejos
 - Si la ventana de Turtle no se cierra automáticamente, recuerda finalizar el programa cerrando la ventana o usando `Ctrl + C`.
 - Revisa cada `TODO` antes de dar por buena la solución y prueba diferentes configuraciones para asegurarte de que todo responde correctamente.
+
+###Uso de IA
+-Se ha usado la ia para revisar el funcionamiento del programa y detectar posibles errores. El grupo ha realizado y comprobado los cambios en el código.
