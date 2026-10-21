@@ -23,13 +23,16 @@ BLUE_SPEED = 3
 Vemos en el TODO 1 que las velocidades son positivas. 
     Posivilidades:
         RED_SPEED = 5
-        BLUE_SPEED = 3   --> gana el rojo   ----> COMPROBACIÓN 2: de esta forma la roja es más rápida que la azul 
+        BLUE_SPEED = 3   --> gana el rojo   ----> COMPROBACIÓN 2: de esta forma la roja es más rápida que la azul. 
 
         RED_SPEED = 5
-        BLUE_SPEED = 8   ---> gana el azul ----> COMPROBACIÓN 3: de esta forma la tortuga azul es más rápida 
+        BLUE_SPEED = 8   ---> gana el azul ----> COMPROBACIÓN 3: de esta forma la tortuga azul es más rápida. 
 
         RED_SPEED = 5
-        BLUE_SPEED = 5   ---> empate -----> COMPROBACION 4: de esta forma tienen la misma velocidad y quedarían empate 
+        BLUE_SPEED = 5   ---> empate -----> COMPROBACION 4: de esta forma tienen la misma velocidad y quedarían empate.
+
+COMPROBACIÓN 6: 
+    Dependiendo los valores que le pongamos a cada velocidad sabremos antes de ejecutar qué tortaga ganará.
 """
 
 
@@ -67,7 +70,7 @@ def run_race(red, blue):
     if RED_SPEED <=0 or BLUE_SPEED <=0:
         print("Error: las velocidades deben ser positivas.")
         return ""
-    ### COMPROBACION 1: en TODO 2 comprueba y lanza un error si las velocidades son negativas. 
+    ### COMPROBACION 5: en TODO 2 comprueba y lanza un error si las velocidades son negativas. 
   
 
     # TODO 3: bucle de la carrera
