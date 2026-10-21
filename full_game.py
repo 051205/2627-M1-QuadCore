@@ -92,15 +92,24 @@ def run_race(red, blue):
             return "azul"
 
 
+
 def main():
     """Pone en marcha la carrera (código proporcionado)."""
     screen, red, blue = prepare_game()
     winner = run_race(red, blue)
     if winner == "empate":
-        screen.title("¡Empate! Las dos tortugas llegan a la vez")
+       message = ("¡Empate! Las dos tortugas llegan a la vez")
     elif winner:
-        screen.title(f"¡Ha ganado la tortuga {winner}!")
+        message = (f"¡Ha ganado la tortuga {winner}!")
+
+### COMPRABACIÓN/ PRUEBA: con esta parte de código el mensaje del ganador sale reflejado en la pantalla. 
+    texto = turtle.Turtle()
+    texto.hideturtle()
+    texto.penup()
+    texto.goto(0, 150)
+    texto.write(message, align="center", font=("Arial", 16, "bold"))
     screen.mainloop()
+
 
 
 if __name__ == "__main__":
